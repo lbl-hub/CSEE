@@ -1,0 +1,72 @@
+                                                      * * * 输 入 和 初 始 化 信 息 * * *                      Date: 2024-03-03
+
+ENTERING ROUTINE SWINGM
+     PSD-BPA暂态稳定程序
+     版本号  : 5.9.0 @ PSD
+     编译时间: 2022-11-2 16:22:51
+*** WARNING        程序无法识别下面的数据卡：
+     F2
+*** WARNING        程序无法识别下面的数据卡：
+     F2
+CASE LF1        1     1     1
+---- ----------    -    --------- --------
+ENTERING ROUTINE TAPEWK
+*** WARNING   CASE卡29列非零，潮流中节点有功出力不为0，稳定中没有找到对应的有效数据（发电机、LN），作为负荷处理（等效于LN卡）。
+  POWER FLOW CASE ( LF1        ) IS BEING PROCESSED.
+ENTERING ROUTINE INPUT1
+  SWING CASE CONTINUOUS EXECUTED ON 2024-03-03 USING VERSION 5.9.0 @ PSD
+  POWER FLOW CASE(LF1       ) EXECUTED ON 2024-03-03
+INPUT DATA CARDS
+F1                           .7
+*** WARNING        PROGRAM WILL FILTER BUS FREQUENCY USING A TIME CONSTANT OF .0100 SECONDS.
+FF       .5 1000.          .001   0 .001                 1     3   1
+ILIM       =         25
+TOLI       =  0.0010000
+START TIME =       0.00
+DELTA TIME =       0.50
+END   TIME =    1000.00
+DELANG     =  0.0000175
+DCITOL     =  8.0000000
+DMPMLT     =  1.0000000
+DTC        =  0.5000000
+ISTP       =         15
+BASE HZ    =      50.00
+ENTERING ROUTINE INPUT1
+SUBROUTINE INPUT1 HAS BEEN PROCESSED.
+ENTERING ROUTINE INPUT2
+*** WARNING   稳定数据中的零序数据XO\XR\LO\LO+\LM，如果潮流没有对应支路或节点，将自动删除。（DEBUG卡49列填1可显示详细提示信息）
+SUBROUTINE INPUT2 HAS BEEN PROCESSED.
+ENTERING ROUTINE INPUT3
+*** WARNING   稳定数据中的发电机、马达，如果潮流中有功出力为0或不存在，将自动删除。（DEBUG卡48列填1可显示详细提示信息）
+*** WARNING   发电机"RE-Bus   525.0 "是无穷大节点。
+*** WARNING   B  WT02-09  .69  3
+*** WARNING   该数据卡中的节点"WT02-09    0.69"不存在。
+*** WARNING   B  WT02-10  .69  3
+*** WARNING   该数据卡中的节点"WT02-10    0.69"不存在。
+*** WARNING   B  WT02-11  .69  3
+*** WARNING   该数据卡中的节点"WT02-11    0.69"不存在。
+*** WARNING   B  WT02-12  .69  3
+*** WARNING   该数据卡中的节点"WT02-12    0.69"不存在。
+*** WARNING   G  TP04-01  20.    3  3           3                           TP05-06  20.
+*** WARNING   该数据卡中的节点"TP04-01   20.00"不存在。
+*** WARNING   G  TP04-01  20.    3  3           3                           TP05-06  20.
+*** WARNING   该卡中的发电机不存在。
+ENTERING ROUTINE INITL1
+SUBROUTINE INITL1 HAS BEEN PROCESSED.
+ENTERING ROUTINE INITL2
+ENTERING ROUTINE FORM_NEG_NETWORK_MATRIX
+ENTERING ROUTINE FORM_ZERO_NETWORK_MATRIX
+SUBROUTINE I N I T L 2 HAS BEEN PROCESSED
+ENTERING ROUTINE INITL3
+ENTERING ROUTINE INITL4
+初始状态，共包含  2个同步网络（前5个节点）：
+网络 1：  B01      525.0  B02      525.0  B03      525.0  B04      525.0  B05      525.0
+网络 2：  B09      525.0  DN02     199.0  DP02     199.0  RE-Bus   525.0
+
+
+SWING CASE: CONTINUOUS POWERFLOW CASE: LF1                 * * *  计 算 过 程 信 息  * * *                     Date: 2024-03-03
+
+ SOLN IN           1
+ SOLN OUT           2
+ENTERING ROUTINE REDUCE
+ SOLN IN           3
